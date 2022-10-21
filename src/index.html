@@ -4,6 +4,46 @@
   'title':'Custom Player'
 })
 <body class="page__body">
+  <section class="player">
+    <video width="1080" poster="" class="player__video">
+      <source src="video/1.mp4" type="video/mp4">
+    </video>
 
+    <div class="player__progress">
+      <div class="player__progress-current"><span class="player__progress-current-min">00</span>:<span class="player__progress-current-sec">00</span></div>
+      <input type="range" class="player__progress-bar" min="0" max="100" value="0" step="any" style="width: 80%;">
+      <div class="player__progress-duration"><span class="player__progress-duration-min">00</span>:<span class="player__progress-duration-sec">00</span></div>
+    </div>
+
+    <div class="player__play">
+      <button class="player__play-btn">Play</button>
+    </div>
+
+    <div class="player__speed">
+      <button class="player__speed-btn">Speed</button>
+    </div>
+
+    <div class="player__fullscreen">
+      <button class="player__fullscreen-btn">Full Screen</button>
+    </div>
+
+    <div class="player__plustime">
+      <button class="player__plustime-btn">+10 sec</button>
+    </div>
+
+    <div class="player__minustime">
+      <button class="player__minustime-btn">-10 sec</button>
+    </div>
+
+
+
+    <div class="player__volume">
+      <input type="range" class="player__volume-input" min="0" max="100" value="100">
+      Sound
+      <span class="player__volume-procent">100%</span>
+    </div>
+
+
+  </section>
 </body>
 </html>
