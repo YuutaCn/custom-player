@@ -1,49 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="page">
 @include('partials/head.html',{
-  'title':'Custom Player'
+'title':'Custom Player'
 })
+
 <body class="page__body">
+  <div class="player-light"></div>
   <section class="player">
-    <video width="1080" poster="" class="player__video">
-      <source src="video/1.mp4" type="video/mp4">
-    </video>
-
-    <div class="player__progress">
-      <div class="player__progress-current"><span class="player__progress-current-min">00</span>:<span class="player__progress-current-sec">00</span></div>
-      <input type="range" class="player__progress-bar" min="0" max="100" value="0" step="any" style="width: 80%;">
-      <div class="player__progress-duration"><span class="player__progress-duration-min">00</span>:<span class="player__progress-duration-sec">00</span></div>
+    <div class="player__header">
+      <div class="player__header-btn">
+        <button class="player__header-btn-player-2" name="Плеер">Внешний плеер</button>
+        <button class="player__header-btn-light" name="Выключить свет">Выключить свет</button>
+        <a class="player__header-btn-prob" href="tg://resolve?domain=yuutacn">
+          Сообщить о проблеме
+        </a>
+      </div>
+      <div class="player__header-social">
+        <p class="player__header-social-view">Смотрят:&NonBreakingSpace;<span class="header__player-social-view-span">0</span>&NonBreakingSpace;анимешников</p>
+      </div>
     </div>
-
-    <div class="player__play">
-      <button class="player__play-btn">Play</button>
-    </div>
-
-    <div class="player__speed">
-      <button class="player__speed-btn">Speed</button>
-    </div>
-
-    <div class="player__fullscreen">
-      <button class="player__fullscreen-btn">Full Screen</button>
-    </div>
-
-    <div class="player__plustime">
-      <button class="player__plustime-btn">+10 sec</button>
-    </div>
-
-    <div class="player__minustime">
-      <button class="player__minustime-btn">-10 sec</button>
-    </div>
-
-
-
-    <div class="player__volume">
-      <input type="range" class="player__volume-input" min="0" max="100" value="100">
-      Sound
-      <span class="player__volume-procent">100%</span>
-    </div>
-
-
+    <iframe class="player__video" src="//kodik.info/serial/16784/2a31afa59819cd5c19d30a6e95091693/720p" width="607"
+      height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *">
+    </iframe>
   </section>
 </body>
+
 </html>
